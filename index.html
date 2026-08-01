@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>$SHRI Mining</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="app-container">
         <!-- Header: Balance -->
         <header class="header">
-            <div class="balance-container">
-                <img src="https://i.ibb.co/vz4448z/shri-logo.png" alt="SHRI Logo" class="token-logo">
+            <div class="balance-line">
+                <div class="token-logo-mini">$</div> <!-- Direct Text Logo -->
                 <span id="balance">0.0000</span> <span class="ticker">$SHRI</span>
             </div>
             <div class="rate-container">
@@ -19,19 +20,19 @@
             </div>
         </header>
 
-        <!-- Main Body: Pi style Mining Button -->
+        <!-- Main Body: Big Mining Button -->
         <main class="main-content">
             <div class="circle-container">
-                <div class="outer-ring"></div>
+                <div class="outer-glow"></div>
                 <button id="miningBtn" class="mining-button">
-                    <img src="https://i.ibb.co/vz4448z/shri-logo.png" alt="SHRI" class="button-logo">
+                    <div class="button-logo-large">$</div> <!-- Direct Text Logo -->
                 </button>
             </div>
             <p id="status" class="status-text">Tap to Start Mining</p>
             <p id="timer" class="timer-text"></p>
         </main>
 
-        <!-- Footer: Navigation like Pi -->
+        <!-- Footer: Navigation -->
         <footer class="footer">
             <button class="nav-item active">⛏️ Mine</button>
             <button class="nav-item">📋 Tasks</button>
