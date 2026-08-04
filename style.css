@@ -1,1 +1,158 @@
+/* style.css - Royal Gold Theme for $SHRI */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background: radial-gradient(circle, #1a1a1a 0%, #000000 100%);
+    color: #fff;
+    user-select: none;
+}
 
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    padding: 20px 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.03);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.balance-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: #D4AF37; /* Royal Gold */
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+}
+
+.token-logo-mini {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+    border: 1px solid #D4AF37;
+}
+
+.ticker {
+    font-size: 18px;
+    color: #aaa;
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+.rate-container {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #4CAF50;
+}
+
+/* Main Body: Big Mining Button */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.circle-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mining-button {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, #FFD700 0%, #D4AF37 100%);
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.button-logo-large {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
+}
+
+.outer-glow {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: transparent;
+    border: 3px dashed #D4AF37;
+    border-radius: 50%;
+    opacity: 0.6;
+}
+
+/* Glow Animation */
+.mining-button.active {
+    animation: pulseGlow 1.5s infinite;
+}
+
+@keyframes pulseGlow {
+    0% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.5); }
+    50% { box-shadow: 0 0 50px rgba(212, 175, 55, 0.9); }
+    100% { box-shadow: 0 0 20px rgba(212, 175, 55, 0.5); }
+}
+
+.status-text {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.timer-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #D4AF37;
+    margin-top: 5px;
+}
+
+/* Footer Navigation */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0 20px;
+    background: #080808;
+    border-top: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.nav-item {
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.nav-item.active {
+    color: #D4AF37;
+    font-weight: bold;
+}
