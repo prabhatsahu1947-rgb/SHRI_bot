@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>$SHRI Mining</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header: Balance -->
+        <header class="header">
+            <div class="balance-line">
+                <img src="logo.png" alt="$SHRI" class="token-logo-mini">
+                <span id="balance">0.0000</span> <span class="ticker">$SHRI</span>
+            </div>
+            <div class="rate-container">
+                ⚡ <span id="rate">0.10</span> $SHRI/hr
+            </div>
+        </header>
 
+        <!-- Main Body: Big Mining Button -->
+        <main class="main-content">
+            <div class="circle-container">
+                <div class="outer-glow"></div>
+                <button id="miningBtn" class="mining-button">
+                    <img src="logo.png" alt="$SHRI Coin" class="button-logo-large">
+                </button>
+            </div>
+            <p id="status" class="status-text">Tap to Start Mining</p>
+            <p id="timer" class="timer-text"></p>
+        </main>
+
+        <!-- Footer: Navigation -->
+        <footer class="footer">
+            <button class="nav-item active">⛏️ Mine</button>
+            <button class="nav-item">📋 Tasks</button>
+            <button class="nav-item">👥 Invite</button>
+            <button class="nav-item">👛 Wallet</button>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
